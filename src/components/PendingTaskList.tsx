@@ -28,7 +28,7 @@ const PendingTaskList = () => {
 
 
 
-  const pending = tasks.filter(task => task.status === "pending").reverse();
+  // const pending = tasks.filter(task => task.status === "pending").reverse();
 
   const getPriorityValue = (priority: string) => {
   switch (priority) {
@@ -69,9 +69,9 @@ if (sortByPriority) {
             </select>
         </label>
 
-        {/* <button onClick={() => setSortByPriority(prev => !prev)}>
+        <button onClick={() => setSortByPriority(prev => !prev)}>
             {sortByPriority ? "Clear Sort" : "Sort by Priority"}
-        </button> */}
+        </button>
         </div>
 
         <div className="task-grid">
