@@ -1,0 +1,155 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;  
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+header {
+  height: 50px;
+  background: #2f80ed;
+}
+header div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+h2 {
+  font-size: 24px;
+  margin-left: 40px;
+  color: #f9f9f9;
+}
+.task-form {
+  padding: 15px;
+}
+.task-form input {
+  padding: 0.5rem;
+  width: -webkit-fill-available;
+  margin-bottom: 0.5rem;
+}
+.task-form textarea {
+  height: 50px;
+  padding: 0.5rem;
+  width: -webkit-fill-available;
+  margin-bottom: 0.5rem;
+}
+
+.task-form button {
+  padding: 0.5rem 1rem;
+  background-color: #2f80ed;
+  color: #fff;
+  border: none;
+}
+
+.task-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.task-list {
+  margin-top: 2rem;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+.task-layout {
+  display: flex;
+  flex-direction: column; /* 🔄 En móvil, se apilan */
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.form-section {
+  max-width: 100%;
+}
+.form-section select {
+  margin-bottom: 5px;
+}
+
+.tabbed-section {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+.tasks-section {
+  flex: 3;
+  overflow-x: auto;
+}
+
+.completed-section {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #eef2f7;
+  border-radius: 10px;
+}
+
+
+button {
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #1366d6;
+}
+.tabs {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.tabs button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.tabs button:hover {
+  color: #2f80ed;
+}
+
+.tabs .active {
+  border-bottom: 3px solid #2f80ed;
+  color: #2f80ed;
+}
+
+.tasks-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edit-task-form input,
+.edit-task-form textarea,
+.edit-task-form select {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
