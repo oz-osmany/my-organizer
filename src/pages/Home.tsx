@@ -1,7 +1,7 @@
 import { useState } from "react";
-// import CompletedTaskList from "../components/CompletedTaskList";
-// import PendingTaskList from "../components/PendingTaskList";
-// import TaskForm from "../components/TaskForm";
+import CompletedTaskList from "../components/CompletedTaskList";
+import PendingTaskList from "../components/PendingTaskList";
+import TaskForm from "../components/TaskForm";
 
 const Home = () => {
 
@@ -16,7 +16,7 @@ const Home = () => {
       </header>
       <div className="task-layout">
       <div className="form-section">
-        {/* <TaskForm /> */}
+        <TaskForm />
       </div>
 
       <div className="tabbed-section">
@@ -36,8 +36,8 @@ const Home = () => {
         </div>
 
         <div className="tasks-display">
-          {/* {activeTab === "pending" && <PendingTaskList />}
-          {activeTab === "completed" && <CompletedTaskList />} */}
+          {activeTab === "pending" && <PendingTaskList />}
+          {activeTab === "completed" && <CompletedTaskList />}
         </div>
       </div>
     </div>
